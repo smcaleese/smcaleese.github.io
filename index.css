@@ -1,0 +1,200 @@
+/* general */
+:root {
+  --my-blue: #0074D9;
+}
+
+body {
+  height: 100%;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+#first-section,
+#projects-section,
+#contact-section {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.section-header {
+  padding: 0 0 20px 0;
+}
+/* general */
+
+/* nav */
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-ul {
+  list-style-type: none;
+}
+
+.nav-ul li {
+  height: 40px;
+  line-height: 40px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-box {
+  height: 40px;
+  width: 40px;
+}
+
+.nav-box img {
+  width: 40px;
+  height: 40px;
+}
+/* nav */
+
+/* first section */
+#first-section {
+  height: 600px;
+  background-color:#f0f0f0;
+}
+
+h2, p {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+  padding: 30px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+#navbarNav {
+  margin-left: 85%;
+}
+
+.flex-container {
+  text-align: center;
+  width: 100%;
+  display: flex;
+}
+
+.bio {
+  width: 90%;
+  background-color: #eee;
+}
+/* first section */
+
+/* projects section */
+#projects-section {
+  background-color: #87ff91;
+}
+
+:root {
+  --project-image-height: 250px;
+}
+
+.project {
+  width: 80vw;
+  display: flex;
+  background-color: #cee1ff;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.project-description {
+  flex: 1;
+  margin: 0 20px 0 20px;
+}
+
+.project img {
+  height: var(--project-image-height);
+  width: 400px;
+  border-radius: 20px;
+}
+
+@media all and (max-width: 1000px) {
+  .project {
+    display: block;
+    margin: 0 0 10vh 0;
+  }
+}
+/* projects section */
+
+/* contact section */
+#contact-section {
+  height: 50vh;
+  background-color: #f0f0f0;
+}
+
+.contact-bubbles-ul {
+  width: 50vw;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bubble {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-color: white;
+  transition: background-color 1s;
+}
+
+.elongated-gmail-bubble {
+  display: none;
+}
+
+.elongated-gmail-bubble-box {
+  height: 150px;
+  width: 300px;
+  border-radius: 60px 60px 60px 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elongated-gmail-bubble-box p {
+  position: relative;
+  margin-top: 1em;
+}
+
+.bubble:hover {
+  background-color:#87ff91;
+}
+
+.bubble-image img {
+  position: absolute;
+  margin: 25px 0 0 25px;
+  height: 100px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-bubbles-ul {
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bubble, .elongated-gmail-bubble-box {
+    margin: 30px;
+  }
+  #contact-section {
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+}
+
+/* contact section */
