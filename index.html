@@ -1,173 +1,160 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Stephen McAleese</title>
-  <!--JQuery -->
-  <script src="jquery-3.4.1.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- Google Source Sans Font -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" type="text/css" href="index.css" />
-  <link rel="shortcut icon" href="images/icon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="">-->
+    <title>Stephen McAleese</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Roboto Slab Font -->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container">
-        <nav class="nav">
-            <ul class="nav-ul">
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects-section">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-section">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://directory.stephenmcaleese.com">Directory</a>
-                </li>
-            </ul>
-        </nav>
-  </div>
+    <section class="fullscreen-container greeting-box">
+        <h1>Stephen McAleese</h1>
+        <h2>Web Developer</h2>
+        <img class="greeting-down-arrow-image" src="images/down-arrow.png" alt="down arrow">
+    </section>
 
-    <div id="first-section">
-        <div class="container">
-            <div class="row align-items-center about-box">
-                <div class="col-md-auto">
+    <section class="fullscreen-container">
+        <div class="round-box">
+            <aside class="about">
+                <div class="about-text-box">
                     <h1>About Me</h1>
-                    <h5>My name is Stephen McAleese. I am a web developer from Ireland.</h5>
+                    <p>
+                        Hi, my name is Stephen McAleese. I'm a full stack Javascript web developer from Ireland. I'm currently studied Computing in DCU and
+                        I'll graduate in 2022.
+                    </p>
                 </div>
+            </aside>
+            <figure class="portrait center">
+                <img src="images/portrait.png" alt="portrait">
+            </figure>
+        </div>
+    </section>
+    
+    <section class="fullscreen-container skills-container">
+        <div class="skills-col center">
+            <div class="skills-box">
+                <img src="images/design.png" class="skills-image" alt="designer image">
+                <h3>Designer</h3>
+                <p>I like to create clean, simple, fast-loading designs and beautiful animations.</p>
+                <h3>Tools</h3>
+                <p>
+                    Pen and Paper
+                    <br/>
+                    Figma
+                </p>
             </div>
         </div>
-    </div>
-
-    <div id="projects-section">
-        <div class="container align-self-start">
-            <div class="row justify-content-center">
-                <h1 class="section-header">Software Projects</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="project">
-                    <div class="col project-description">
-                        <a href="https://github.com/smcaleese/js-clock-and-calendar"><h2>JS Clock</h2></a>
-                        <p>A javascript clock which uses progress bars to show the progression of time. The clock shows
-                           the passing of seconds, minutes, hours and the whole day with each respective progress bar moving
-                           more slowly.
-                        </p>
-                        <p>Technologies: Javascript, HTML, CSS</p>
-                    </div>
-                    <div>
-                        <a href="images/js-clock.png">
-                            <img src="images/js-clock.png" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="project">
-                    <div class="project-description">
-                        <a href="https://github.com/smcaleese/chitchat-linux"><h2>ChitChat</h2></a>
-                        <p>A comment sharing site built using Ruby on Rails. Users can signup and login, create
-                           titled pages and comment on them or pages created by other users.
-                        </p>
-                        <p>Technologies: Ruby on Rails, HTML, CSS</p>
-                    </div>
-                    <div>
-                        <a href="images/chitchat.png">
-                            <img src="images/chitchat.png" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="project">
-                    <div class="project-description">
-                        <a href="https://covid-cases-predictor.herokuapp.com/"><h2>CovidForecaster</h2></a>
-                        <p>A ReactJS web app for predicting Covid-19 cases.</p>
-                        <p>Technologies: ReactJS, Recharts, HTML, CSS</p>
-                    </div>
-                    <div class="project-image-div">
-                        <a href="images/covid-forecaster.png">
-                           <img src="images/covid-forecaster.png" />
-                        </a>
-                    </div>
-                </div>
+        
+        <div class="skills-col center">
+            <div class="skills-box">
+                <img src="images/front-end.png" class="skills-image" alt="designer image">
+                <h3>Front-End Developer</h3>
+                <p>Front-end development enables me to bring complex web apps to life in the browser.</p>
+                <h3>Tools</h3>
+                <p>
+                    HTML and CSS
+                    <br/>
+                    ReactJS
+                </p>
             </div>
         </div>
-    </div>
-
-    <div id="contact-section">
-            <div class="container align-self-start">
-                <div class="row justify-content-center">
-                    <h1 class="section-header">Contact</h1>
-                </div>
-                <div class="row justify-content-center">
-                </div>
-                <div class="row justify-content-center">
-                    <ul class="contact-bubbles-ul">
-                        <li class="gmail-bubble">
-                            <div class="bubble">
-                                <div class="bubble-image">
-                                    <img src="images/gmail.png" />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="elongated-gmail-bubble">
-                            <div class="elongated-gmail-bubble-box">
-                                <p>stephenmcaleese11@gmail.com</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="https://github.com/smcaleese">
-                                <div class="bubble">
-                                    <div class="bubble-image">
-                                        <img src="images/github.svg" />
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/stephen-mc-aleese-ab8585176/">
-                                <div class="bubble">
-                                    <div class="bubble-image">
-                                        <img src="images/linked-in.png" />
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/stemcaleese">
-                                <div class="bubble">
-                                    <div class="bubble-image">
-                                        <img src="images/twitter.png" />
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="skills-col center">
+            <div class="skills-box">
+                <img src="images/gears.jpg" class="skills-image" alt="designer image">
+                <h3>Back-End Developer</h3>
+                <p>Server side development tools such as NodeJS unleash the power of the cloud.</p>
+                <h3>Tools</h3>
+                <p>
+                    NodeJS
+                    <br/>
+                    ExpressJS
+                </p>
             </div>
         </div>
-
-        <script type="text/javascript">
-            $(".gmail-bubble").mouseenter(function() {
-                $(".gmail-bubble").hide();
-                $(".elongated-gmail-bubble").show();
-            });
-            $(".gmail-bubble").mouseleave(function() {
-                $(".elongated-gmail-bubble").hide();
-                $(".gmail-bubble").show();
-            });
-            $(".gmail-bubble").click(function() {
-                $(".gmail-bubble").toggle();
-                $(".elongated-gmail-bubble").toggle();
-            });
-            $(".elongated-gmail-bubble").click(function() {
-                $(".gmail-bubble").toggle();
-                $(".elongated-gmail-bubble").toggle();
-            });
-        </script>
+    </section>
+    
+    <section class="project-intro">
+        <h1>Projects</h1>
+        <hr class="dividing-line">
+        <h2>Some of the things I have recently been working on</h2>
+    </section>
+    
+    <section class="project fullscreen-container">
+        <div class="project-description-box">
+            <h1 class="project-title">Covid Forecaster</h1>
+            <hr class="project-line">
+            <p class="project-description">I created this app to predict the number of covid cases expected to occur.</p>
+            <p class="project-description">Technologies used: ReactJS, HTML and CSS.</p>
+            <p class="project-description">Date finished: April 2020.</p>
+        </div>
+        <img src="images/covid-forecaster.png" class="project-image">
+    </section>
+    
+    <section class="project fullscreen-container">
+        <div class="project-description-box">
+            <h1 class="project-title">JS Clock</h1>
+            <hr class="project-line">
+            <p class="project-description">A clock and calendar that dynamically shows time passing in real time.</p>
+            <p class="project-description">Technologies used: Javascript, HTML and CSS.</p>
+            <p class="project-description">Date finished: June 2019.</p>
+        </div>
+        <img src="images/js-clock.png" class="project-image">
+    </section>
+    
+    <section class="project fullscreen-container">
+        <div class="project-description-box">
+            <h1 class="project-title">ChitChat</h1>
+            <hr class="project-line">
+            <p class="project-description">A ruby on rails template app. Features: login and signup, creating and deleting pages pages, commenting on pages </p>
+            <p class="project-description">Technologies used: Ruby, Ruby on Rails, HTML and CSS.</p>
+            <p class="project-description">Date finished: August 2016.</p>
+        </div>
+        <img src="images/chitchat.png" class="project-image">
+    </section>
+    
+    <section class="project fullscreen-container">
+        <div class="project-description-box">
+            <h1 class="project-title">GitHub</h1>
+            <hr class="project-line">
+            <p class="project-description">Check out the growing list of other projects I have on my GitHub account.</p>
+            <p class="project-description">Date finished: ongoing</p>
+        </div>
+        <img src="images/github-projects.png" class="project-image">
+    </section>
+    
+    <section class="contact">
+        <h1 class="contact-title">Contact</h1>
+        <hr class="dividing-line">
+        <h2 class="contact-description">
+            Want to get in touch? Interested in working together? Send an email to 
+            stephenmcaleese11@gmail.com or reach out to me on social media.
+        </h2>
+        <div class="soc-media-box">
+            <figure class="soc-media-icon">
+                <a href="https://www.facebook.com/stephen.mcaleese.77">
+                    <img src="images/facebook.png" class="soc-icon-image" alt="facebook">
+                </a>
+            </figure>
+            <figure class="soc-media-icon">
+                <a href="https://www.linkedin.com/in/stephen-mc-aleese-ab8585176/">
+                    <img src="images/linkedin.png" class="soc-icon-image" alt="linkedin"> 
+                </a>
+            </figure>
+            <figure class="soc-media-icon">
+                <a href="https://www.github.com/smcaleese">
+                    <img src="images/github.png" class="soc-icon-image" alt="github">
+                </a>
+            </figure>
+        </div>
+    </section>
+    
+    <footer class="footer center">
+        <p>Site created by Stephen McAleese, 2020</p>
+    </footer>
+</body>
+</html>
