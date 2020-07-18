@@ -31,7 +31,7 @@ class Projects extends Component {
                                     <p>Date finished: April 2020.</p>
                                 </div>
                                 <div className="buttons-container">
-                                    <a href="https://stephenmcaleese.com/covid-cases-predictor/">
+                                    <a href="https://smcaleese.github.io/covid-cases-predictor/">
                                         <button type="button" className="btn btn-primary">open live app</button>
                                     </a>
                                     <a href="https://github.com/smcaleese/covid-cases-predictor">
@@ -54,10 +54,10 @@ class Projects extends Component {
                                     <p>Date finished: June 2019.</p>
                                 </div>
                                 <div className="buttons-container">
-                                    <a href="https://stephenmcaleese.com/covid-cases-predictor/">
+                                    <a href="https://smcaleese.github.io/js-clock/">
                                         <button type="button" className="btn btn-primary">open live app</button>
                                     </a>
-                                    <a href="https://github.com/smcaleese/covid-cases-predictor">
+                                    <a href="https://github.com/smcaleese/js-clock">
                                         <button type="button" className="btn btn-danger">open source</button>
                                     </a>
                                 </div>
@@ -77,16 +77,16 @@ class Projects extends Component {
                                     <p>Date finished: August 2016.</p>
                                 </div>
                                 <div className="buttons-container">
-                                    <a href="https://stephenmcaleese.com/covid-cases-predictor/">
+                                    <a href="https://chit-chat-test.herokuapp.com/">
                                         <button type="button" className="btn btn-primary">open live app</button>
                                     </a>
-                                    <a href="https://github.com/smcaleese/covid-cases-predictor">
+                                    <a href="https://github.com/smcaleese/chitchat-linux">
                                         <button type="button" className="btn btn-danger">open source</button>
                                     </a>
                                 </div>
                             </div>
                             <figure className="project-image-container center">
-                                <img src={chitchatImage}     alt="" />
+                                <img src={chitchatImage} alt="" />
                             </figure>
                         </div>
                     </div>

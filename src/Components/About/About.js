@@ -43,9 +43,15 @@ class About extends Component {
                             </p>
                             <p id="email">email: stephenmcaleeese11@gmail.com</p>
                             <div className="soc-images">
-                                <img src={facebookLogo} className="soc-icon-image" alt="facebook" />
-                                <img src={linkedinLogo} className="soc-icon-image" alt="linked in" />
-                                <img src={githubLogo} className="soc-icon-image" alt="github" />
+                                <a href="https://www.facebook.com/stephen.mcaleese.77">
+                                    <img src={facebookLogo} className="soc-icon-image" alt="facebook" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/stephen-mc-aleese-ab8585176/">
+                                    <img src={linkedinLogo} className="soc-icon-image" alt="linked in" />
+                                </a>
+                                <a href="https://github.com/smcaleese">
+                                    <img src={githubLogo} className="soc-icon-image" alt="github" />
+                                </a>
                             </div>
                         </div>
                     </div>
