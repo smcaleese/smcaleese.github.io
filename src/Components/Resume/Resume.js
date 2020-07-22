@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navigation from '../../Containers/Navigation/Navigation'
-import Button from 'react-bootstrap/Button'
+import resume from './resume.pdf'
 import './Resume.scss'
 
 class Resume extends Component {
@@ -10,7 +10,7 @@ class Resume extends Component {
                 <Navigation />
                 <div className="resume-header">
                     <h1>Resume</h1>
-                    <a href="../resume/resume.pdf" download>
+                    <a href={resume} download>
                         <button type="button" className="btn btn-primary resume-button">Click here to download my resume</button>
                     </a>
                 </div>

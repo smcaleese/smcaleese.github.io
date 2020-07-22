@@ -40,8 +40,9 @@ class Projects extends Component {
                                 </div>
                             </div>
                             <figure className="project-image-container center">
-                                {/* TODO: add link to expand image */}
-                                <img src={covidForcasterImage} alt="" />
+                                <a href={covidForcasterImage}>
+                                    <img src={covidForcasterImage} alt="" />
+                                </a>
                             </figure>
                         </div>
 
@@ -63,7 +64,9 @@ class Projects extends Component {
                                 </div>
                             </div>
                             <figure className="project-image-container center">
-                                <img src={jsClockImage} alt="" />
+                                <a href={jsClockImage}>
+                                    <img src={jsClockImage} alt="" />
+                                </a>
                             </figure>
                         </div>
 
@@ -86,7 +89,9 @@ class Projects extends Component {
                                 </div>
                             </div>
                             <figure className="project-image-container center">
-                                <img src={chitchatImage} alt="" />
+                                <a href={chitchatImage}>
+                                        <img src={chitchatImage} alt="" />
+                                </a>
                             </figure>
                         </div>
                     </div>
