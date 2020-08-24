@@ -1,15 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Navigation from '../../Containers/Navigation/Navigation'
 import covidForcasterImage from '../../images/covid-forecaster.png'
 import jsClockImage from '../../images/js-clock.png'
-import chitchatImage from '../../images/chitchat.png'
+import chitchatImage from '../../images/chitchat-updated.png'
 import './Projects.scss'
-import { Router } from 'react-router-dom'
-
-// TODO:
-// wire up buttons
-// improve images, buttons and responsiveness
 
 class Projects extends Component {
     render() {
@@ -22,6 +16,31 @@ class Projects extends Component {
                         <p>some of the things I've recently been working on</p>
                     </div>
                     <div className="projects-list">
+                    <div className="project">
+                            <div className="project-description-box center">
+                                <div className="project-description">
+                                    <h2>ChitChat</h2>
+                                    <p>A ruby on rails template app. Features: login and signup, creating and deleting pages pages,
+                                        commenting on pages</p>
+                                    <p>Technologies used: Ruby, Ruby on Rails, HTML and CSS.</p>
+                                    <p>Date finished: August 2016.</p>
+                                </div>
+                                <div className="buttons-container">
+                                    <a href="https://chit-chat-test.herokuapp.com/">
+                                        <button type="button" className="btn btn-primary">open live app</button>
+                                    </a>
+                                    <a href="https://github.com/smcaleese/chitchat-linux">
+                                        <button type="button" className="btn btn-danger">open source</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure className="project-image-container center">
+                                <a href={chitchatImage}>
+                                        <img src={chitchatImage} alt="" />
+                                </a>
+                            </figure>
+                        </div>
+
                         <div className="project">
                             <div className="project-description-box center">
                                 <div className="project-description">
@@ -66,31 +85,6 @@ class Projects extends Component {
                             <figure className="project-image-container center">
                                 <a href={jsClockImage}>
                                     <img src={jsClockImage} alt="" />
-                                </a>
-                            </figure>
-                        </div>
-
-                        <div className="project">
-                            <div className="project-description-box center">
-                                <div className="project-description">
-                                    <h2>ChitChat</h2>
-                                    <p>A ruby on rails template app. Features: login and signup, creating and deleting pages pages,
-                                        commenting on pages</p>
-                                    <p>Technologies used: Ruby, Ruby on Rails, HTML and CSS.</p>
-                                    <p>Date finished: August 2016.</p>
-                                </div>
-                                <div className="buttons-container">
-                                    <a href="https://chit-chat-test.herokuapp.com/">
-                                        <button type="button" className="btn btn-primary">open live app</button>
-                                    </a>
-                                    <a href="https://github.com/smcaleese/chitchat-linux">
-                                        <button type="button" className="btn btn-danger">open source</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <figure className="project-image-container center">
-                                <a href={chitchatImage}>
-                                        <img src={chitchatImage} alt="" />
                                 </a>
                             </figure>
                         </div>
