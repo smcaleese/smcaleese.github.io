@@ -20,9 +20,9 @@ class Projects extends Component {
                             <div className="project-description-box center">
                                 <div className="project-description">
                                     <h2>ChitChat</h2>
-                                    <p>A ruby on rails template app. Features: login and signup, creating and deleting pages pages,
-                                        commenting on pages</p>
-                                    <p>Technologies used: Ruby, Ruby on Rails, HTML and CSS.</p>
+                                    <p>A web app for creating pages, commenting on them and discussing topics.
+                                        ChitChat is similar to Reddit.</p>
+                                    <p>Technologies used: Ruby on Rails, HTML and SCSS.</p>
                                     <p>Date finished: August 2016.</p>
                                 </div>
                                 <div className="buttons-container">
@@ -45,7 +45,10 @@ class Projects extends Component {
                             <div className="project-description-box center">
                                 <div className="project-description">
                                     <h2>Covid Forecaster</h2>
-                                    <p>I created this app to predict the number of covid cases expected to occur.</p>
+                                    <p>Uses an exponential model to predict the total number of future covid cases
+                                        based on the current number of cases and the daily growth rate. Supports multiple
+                                        projections.
+                                    </p>
                                     <p>Technologies used: ReactJS, HTML and CSS.</p>
                                     <p>Date finished: April 2020.</p>
                                 </div>
@@ -69,7 +72,7 @@ class Projects extends Component {
                             <div className="project-description-box center">
                                 <div className="project-description">
                                     <h2>JS Clock</h2>
-                                    <p>A clock and calendar that dynamically shows time passing in real time.</p>
+                                    <p>A real-time clock that uses moving sliders to show the passage of time.</p>
                                     <p>Technologies used: Javascript, HTML and CSS.</p>
                                     <p>Date finished: June 2019.</p>
                                 </div>
