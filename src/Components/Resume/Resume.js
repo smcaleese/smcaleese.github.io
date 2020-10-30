@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Navigation from '../../Containers/Navigation/Navigation'
-import resume from './resume.pdf'
+import resume from './resume-30-10-20.pdf'
 import './Resume.scss'
 
 class Resume extends Component {
