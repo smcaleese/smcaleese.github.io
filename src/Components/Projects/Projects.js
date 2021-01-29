@@ -16,6 +16,7 @@ class Projects extends Component {
                     <div className="projects-header">
                         <h1>Projects</h1>
                         <p>some of the things I've recently been working on</p>
+                        <p>note: some project live apps might take up to 30 seconds to load</p>
                     </div>
                     <div className="projects-list">
                         <div className="project">
