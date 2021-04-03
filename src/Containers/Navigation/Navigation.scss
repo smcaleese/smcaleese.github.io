@@ -41,12 +41,20 @@
     }
 }
 
-.bottom-line {
-    height: 0.2rem;
-    background-color: #00A5EC;
+@media (max-width: 600px) {
+    .top .left-top .title {
+        padding: 0 0 0 2rem;
+        font-size: 1.5rem;
+    }
 }
 
-.menu {
+.desktop-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu {
     height: 100%;
     width: 6rem;
 
@@ -61,6 +69,7 @@
         margin: 4rem 2rem 0 0;
         background-color: white; 
         border-radius: 4px;
+        border: 1px solid #f0f0f0;
         
         
         a {
@@ -77,20 +86,7 @@
     }
 }
 
-
-
-
-
-
-/*
- a {
-        text-decoration: none;
-        color: black;
-        padding: 0.5rem;
-    }
-
-    a:hover {
-        background-color: #f0f0f0;
-        border-radius: 5px;
-    }
-*/
+.bottom-line {
+    height: 0.2rem;
+    background-color: #00A5EC;
+}

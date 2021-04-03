@@ -43,6 +43,27 @@
     .landing-section {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
+
+        .left-section {
+            h1 {
+                font-size: 2rem;
+                margin: 1rem;
+            }
+    
+            h2 {
+                font-size: 1rem;
+                color: #505050;
+                margin: 0;
+            }
+        }
+
+        .right-section {
+            .portrait-image {
+                height: 10rem;
+                width: 10rem;
+                margin: 0 0 5rem 0;
+            }
+        }
     }
 }
 
@@ -77,7 +98,7 @@
         
         .left {
             height: 100%;
-            width: 20vw;
+            width: 10rem;
             
             .history-image {
                 height: 8rem;
@@ -127,8 +148,8 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            height: 10rem;
-            width: 10rem;
+            height: 8rem;
+            width: 8rem;
             background-color: #f0f0f0;
             border-radius: 1rem;
             margin: 1rem;
@@ -138,8 +159,8 @@
             }
 
             img {
-                height: 6rem;
-                width: 6rem;
+                height: 4rem;
+                width: 4rem;
             }
         }
     }

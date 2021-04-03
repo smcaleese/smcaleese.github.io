@@ -29,9 +29,19 @@ function useDetectClickOutsideMenu(ref, setMenuOpen) {
   })
 }
 
+function DesktopMenu(props) {
+  return (
+    <div className="desktop-menu">
+      <Link to="/" className="nav-link">About</Link>
+      <Link to="/projects" className="nav-link">Projects</Link>
+      <Link to="/resume" className="nav-link">Resume</Link>
+    </div>
+  )
+}
+
 function MobileMenu(props) {
   return (
-    <div className="menu center" ref={props.menuRef}>
+    <div className="mobile-menu center" ref={props.menuRef}>
       {props.menuOpen ?
         <div className="dropdown center" onClick={() => props.setMenuOpen(false)}>
           <Link to="/">About</Link>
@@ -50,7 +60,29 @@ function MobileMenu(props) {
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef(null)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   useDetectClickOutsideMenu(menuRef, setMenuOpen)
+
+  useState(() => {
+    const handleResize = (event) => {
+      setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  })
+
+  let menu
+  if(windowWidth < 1000) {
+    menu = <MobileMenu
+      setMenuOpen={setMenuOpen}
+      menuOpen={menuOpen}
+    />
+  } else {
+    menu = <DesktopMenu />
+  }
 
   return (
     <nav className="nav">
@@ -59,11 +91,7 @@ export default function Navigation() {
           <h1 className="title">Stephen McAleese</h1>
         </div>
         <div className="right-top">
-          <MobileMenu 
-            menuRef={menuRef} 
-            setMenuOpen={setMenuOpen} 
-            menuOpen={menuOpen}
-          />
+          { menu }
         </div>
       </div>
       <div className="bottom-line"></div>
@@ -72,5 +100,9 @@ export default function Navigation() {
 }
 
 /*
-
+<MobileMenu 
+            menuRef={menuRef} 
+            setMenuOpen={setMenuOpen} 
+            menuOpen={menuOpen}
+          />
 */
