@@ -1,32 +1,76 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
 import './Navigation.scss'
 import { FiMenu } from 'react-icons/fi'
+import Button from '@material-ui/core/Button'
+import Menu from '@material-ui/core/Menu'
 
-// how to implement hamburger menu?
-// start by displaying a hamburger menu
+// TODO
+// 1. style the menu
+// 2. put a menu with it
+// 3. figure out how to transition between menus based on the screen size
 
-export default function Navigation() {
+function useDetectClickOutsideMenu(ref, setMenuOpen) {
+  useEffect(() => {
+    const handleClickOutsideMenu = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        console.log("outside!")
+        setMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutsideMenu)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutsideMenu)
+    }
+  })
+}
+
+function MobileMenu(props) {
   return (
-      <nav className="nav">
-        <FiMenu />
-      </nav>
+    <div className="menu center" ref={props.menuRef}>
+      {props.menuOpen ?
+        <div className="dropdown center" onClick={() => props.setMenuOpen(false)}>
+          <Link to="/">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/resume">Resume</Link>
+        </div>
+        :
+        <div className="hamburger-menu center" onClick={() => props.setMenuOpen(state => !state)}>
+          <FiMenu size="50" />
+        </div>
+      }
+    </div>
   )
 }
 
+export default function Navigation() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const menuRef = useRef(null)
+  useDetectClickOutsideMenu(menuRef, setMenuOpen)
+
+  return (
+    <nav className="nav">
+      <div className="top">
+        <div className="left-top">
+          <h1 className="title">Stephen McAleese</h1>
+        </div>
+        <div className="right-top">
+          <MobileMenu 
+            menuRef={menuRef} 
+            setMenuOpen={setMenuOpen} 
+            menuOpen={menuOpen}
+          />
+        </div>
+      </div>
+      <div className="bottom-line"></div>
+    </nav>
+  )
+}
 
 /*
-<div className="top">
-          <div className="left-top">
-            <h1 className="title">Stephen McAleese</h1>
-          </div>
-          <div className="right-top">
-              <Link to="/" className="nav-link">About</Link>
-              <Link to="/projects" className="nav-link">Projects</Link>
-              <Link to="/resume" className="nav-link">Resume</Link>
-          </div>
-        </div>
-        <div className="bottom-line"></div>
+
 */

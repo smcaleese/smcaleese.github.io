@@ -45,3 +45,52 @@
     height: 0.2rem;
     background-color: #00A5EC;
 }
+
+.menu {
+    height: 100%;
+    width: 6rem;
+
+    .hamburger-menu {
+        height: 100%;
+        width: 100px;
+        cursor: pointer; 
+    }
+
+    .dropdown {
+        position: absolute;
+        margin: 4rem 2rem 0 0;
+        background-color: white; 
+        border-radius: 4px;
+        
+        
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 0.5rem 0;
+            width: 6rem;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
+
+
+
+
+
+
+/*
+ a {
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem;
+    }
+
+    a:hover {
+        background-color: #f0f0f0;
+        border-radius: 5px;
+    }
+*/
