@@ -1,0 +1,47 @@
+.nav {
+    background-color: #363636;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+}
+
+.top {
+    display: flex;
+    flex: 1;
+
+    .left-top {
+        display: flex;
+        align-items: center;
+
+        .title {
+            padding: 0 4rem;
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+
+    .right-top {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0 1.5rem;
+        }
+
+        .nav-link:hover {
+            color: #eee;
+        }
+    }
+}
+
+.bottom-line {
+    height: 0.2rem;
+    background-color: #00A5EC;
+}

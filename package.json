@@ -13,16 +13,17 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.1.0",
     "react-dom": "^16.13.1",
+    "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
   "engines": {
-    "node": ">=15.10.x"
+    "node": ">=10.1.x"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "BROWSER=google-chrome react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

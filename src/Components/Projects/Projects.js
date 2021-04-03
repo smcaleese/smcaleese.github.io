@@ -19,8 +19,7 @@ export default function Projects(props) {
                 <div className="projects-page d-flex flex-column align-items-center">
                     <div className="projects-header">
                         <h1>Projects</h1>
-                        <p>some of the things I've recently been working on</p>
-                        <p>note: some project live apps might take up to 30 seconds to load</p>
+                        <p>some projects I've recently been working on</p>
                     </div>
                     <div className="projects-list">
                         <AppProject 
