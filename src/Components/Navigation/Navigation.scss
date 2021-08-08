@@ -4,7 +4,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: 5rem;
 }
 
 .top {
@@ -18,8 +18,16 @@
     .title {
       padding: 0 4rem;
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 400;
+    }
+
+    a {
+      color: white;
+    }
+
+    a:hover {
+      color: #aaa;
     }
   }
 
@@ -36,7 +44,7 @@
     }
 
     .nav-link:hover {
-      color: #eee;
+      color: #aaa;
     }
   }
 }
@@ -52,6 +60,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  font-size: 1rem;
 }
 
 .mobile-menu {
@@ -86,6 +95,7 @@
 }
 
 .bottom-line {
-  height: 0.2rem;
+  height: 0.5rem;
   background-color: #00A5EC;
+  background-image: linear-gradient(90deg,#004bec,#1696ff);
 }

@@ -3,12 +3,16 @@ html {
   box-sizing: border-box;
 }
 
-/* for large monitors */
-@media (min-width: 2000px) {
-  html {
-    font-size: 26px;
-  }
+p {
+  font-size: 1rem;
 }
+
+/* for large monitors */
+/* @media (min-width: 2000px) {
+  html {
+    font-size: 20px;
+  }
+} */
 
 body {
   margin: 0;

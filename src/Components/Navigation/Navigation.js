@@ -78,7 +78,9 @@ const Navigation = () => {
     <nav className="nav">
       <div className="top">
         <div className="left-top">
-          <h1 className="title">Stephen McAleese</h1>
+          <h1 className="title">
+            <a href="/">Stephen McAleese</a>
+          </h1>
         </div>
         <div className="right-top">
           { menu }

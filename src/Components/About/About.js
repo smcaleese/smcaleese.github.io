@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import portrait from '../../images/portrait.png'
+import face from '../../images/face-6.jpg'
 import facebookLogo from '../../images/facebook.png'
 import linkedinLogo from '../../images/linkedin.png'
 import githubLogo from '../../images/github.png'
@@ -20,13 +21,12 @@ import dcuLogo from '../../images/dcu-logo.png'
 import './About.scss'
 
 const LandingSection = () => (
-  <section className="landing-section">
-    <div className="left-section center">
-      <h1>Stephen McAleese</h1>
-      <h2>SOFTWARE ENGINEER</h2>
-    </div>
-    <div className="right-section center">
-      <img className="portrait-image" src={portrait} alt="portrait" />
+  <section className="landing-section center">
+    <div className="landing-card">
+      <div className="welcome-message">
+        <p>Hi, welcome to my site. My name is Stephen and I'm a software engineer.</p>
+      </div>
+      <img className="portrait-image" src={face} alt="portrait" />
     </div>
   </section>
 )
@@ -43,16 +43,18 @@ const InfoSection = () => (
 const HistoryCard = (props) => (
   <div className="history-card">
     <div className="left center">
-      <div className="history-image center">
+      <div className="history-image">
         <img src={props.image} />
       </div>
     </div>
     <div className="right">
       <div className="text">
-        <h1>{props.title}</h1>
-        {props.description.map(text =>
-          <p>{text}</p>
-        )}
+        <h1 className="title">{props.title}</h1>
+        <div className="description">
+          {props.description.map(text =>
+            <p>{text}</p>
+          )}
+        </div>
       </div>
     </div>
   </div>
@@ -64,6 +66,7 @@ const History = () => (
     <HistoryCard
       title="Rapid7"
       description={[
+          "Mar 2021 - Sep 2021",
           "Software engineering intern working on frontend UI work.",
           "Technologies used: ReactJS"
       ]}
@@ -72,7 +75,7 @@ const History = () => (
     <HistoryCard
       title="DCU"
       description={[
-          "2018 - 2022",
+          "Sep 2018 - May 2022",
           "Studying Computer Science at DCU."
       ]}
       image={dcuLogo}
