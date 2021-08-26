@@ -7,16 +7,10 @@ import { FiMenu } from 'react-icons/fi'
 import Button from '@material-ui/core/Button'
 import Menu from '@material-ui/core/Menu'
 
-// TODO
-// 1. style the menu
-// 2. put a menu with it
-// 3. figure out how to transition between menus based on the screen size
-
 function useDetectClickOutsideMenu(ref, setMenuOpen) {
   useEffect(() => {
     const handleClickOutsideMenu = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
-        console.log("outside!")
         setMenuOpen(false)
       }
     }
@@ -29,35 +23,31 @@ function useDetectClickOutsideMenu(ref, setMenuOpen) {
   })
 }
 
-function DesktopMenu(props) {
-  return (
-    <div className="desktop-menu">
-      <Link to="/" className="nav-link">About</Link>
-      <Link to="/projects" className="nav-link">Projects</Link>
-      <Link to="/resume" className="nav-link">Resume</Link>
-    </div>
-  )
-}
+const DesktopMenu = () => (
+  <div className="desktop-menu">
+    <Link to="/" className="nav-link">About</Link>
+    <Link to="/projects" className="nav-link">Projects</Link>
+    <Link to="/resume" className="nav-link">Resume</Link>
+  </div>
+)
 
-function MobileMenu(props) {
-  return (
-    <div className="mobile-menu center" ref={props.menuRef}>
-      {props.menuOpen ?
-        <div className="dropdown center" onClick={() => props.setMenuOpen(false)}>
-          <Link to="/">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/resume">Resume</Link>
-        </div>
-        :
-        <div className="hamburger-menu center" onClick={() => props.setMenuOpen(state => !state)}>
-          <FiMenu size="50" />
-        </div>
-      }
-    </div>
-  )
-}
+const MobileMenu = (props) => (
+  <div className="mobile-menu center" ref={props.menuRef}>
+    {props.menuOpen ?
+      <div className="dropdown center" onClick={() => props.setMenuOpen(false)}>
+        <Link to="/">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/resume">Resume</Link>
+      </div>
+      :
+      <div className="hamburger-menu center" onClick={() => props.setMenuOpen(state => !state)}>
+        <FiMenu size="50" />
+      </div>
+    }
+  </div>
+)
 
-export default function Navigation() {
+const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef(null)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -88,7 +78,9 @@ export default function Navigation() {
     <nav className="nav">
       <div className="top">
         <div className="left-top">
-          <h1 className="title">Stephen McAleese</h1>
+          <h1 className="title">
+            <a href="/">Stephen McAleese</a>
+          </h1>
         </div>
         <div className="right-top">
           { menu }
@@ -99,10 +91,4 @@ export default function Navigation() {
   )
 }
 
-/*
-<MobileMenu 
-            menuRef={menuRef} 
-            setMenuOpen={setMenuOpen} 
-            menuOpen={menuOpen}
-          />
-*/
+export default Navigation

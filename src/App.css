@@ -1,5 +1,13 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .App,
 div {
-    max-width: 100%;
-    font-size: 16px;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
 }
