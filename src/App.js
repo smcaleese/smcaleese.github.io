@@ -1,10 +1,12 @@
 import React from 'react'
 import './App.css'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import GATracker from './GATracker'
+import ReactGA from 'react-ga'
 import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
 import Resume from './Components/Resume/Resume'
+
+ReactGA.initialize("G-MP2K93C8VN")
 
 const App = () => (
   <div className="App">
@@ -14,7 +16,6 @@ const App = () => (
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/resume" component={Resume} />
       </Switch>
-      <GATracker />
     </Router>
   </div>
 )
