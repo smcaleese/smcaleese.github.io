@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ReactGA from 'react-ga'
 import Navigation from '../Navigation/Navigation'
 import face from '../../images/face-6.jpg'
 import facebookLogo from '../../images/facebook.png'
@@ -157,13 +158,19 @@ const Footer = () => (
   <div className="footer"></div>
 )
 
-const About = () => (
-  <div className="about-page">
-    <Navigation />
-    <LandingSection />
-    <InfoSection />
-    <Footer />
-  </div>
-)
+const About = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+  }, [])
+
+  return (
+    <div className="about-page">
+      <Navigation />
+      <LandingSection />
+      <InfoSection />
+      <Footer />
+    </div>
+  )
+}
 
 export default About
