@@ -160,6 +160,7 @@ const Footer = () => (
 
 const About = () => {
   useEffect(() => {
+    console.log('event:', window.location.pathname)
     ReactGA.pageview(window.location.pathname)
   }, [])
 

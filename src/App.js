@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import GATracker from './GATracker'
 import ReactGA from 'react-ga'
 import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
