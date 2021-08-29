@@ -12,7 +12,7 @@ import Project from './Project'
 import AppProject from './AppProject'
 import './Projects.scss'
 
-const Projects = (props) => (
+const Projects = () => (
   <>
     <Navigation />
     <div className="projects-page d-flex flex-column align-items-center">
