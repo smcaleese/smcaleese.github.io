@@ -1,11 +1,9 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
-import portrait from '../../images/portrait.png'
 import face from '../../images/face-6.jpg'
 import facebookLogo from '../../images/facebook.png'
 import linkedinLogo from '../../images/linkedin.png'
 import githubLogo from '../../images/github.png'
-//
 import htmlLogo from '../../images/html.png'
 import cssLogo from '../../images/css.png'
 import reactLogo from '../../images/logo.png'
@@ -17,7 +15,6 @@ import javaLogo from '../../images/java.png'
 import linuxLogo from '../../images/linux.png'
 import rapid7Logo from '../../images/rapid7.jpg'
 import dcuLogo from '../../images/dcu-logo.png'
-//
 import './About.scss'
 
 const LandingSection = () => (
