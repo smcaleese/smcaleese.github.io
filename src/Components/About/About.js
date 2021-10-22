@@ -19,9 +19,17 @@ import './About.scss'
 
 const LandingSection = () => (
   <section className="landing-section center">
-    <div className="landing-card">
+    <div className="landing-card center-horizontally">
       <div className="welcome-message">
-        <p>Hi, welcome to my site. My name is Stephen and I'm a software engineer.</p>
+        <p>Hi, my name is Stephen and I'm studying Computer Science in DCU. I'm in 4th year and expect to graduate in 2022.</p>
+        <p>
+          I previously worked at Rapid7 as a Software Engineering intern. Some side projects I've previous worked on can be found in the projects
+          section of this website or my GitHub account. I'm interested in web development, programming and artificial intelligence and I would like to
+          grow my skills in those fields.
+        </p>
+        <p>
+          In my free time, I also like to spend time writing and reading.
+        </p>
       </div>
       <img className="portrait-image" src={face} alt="portrait" />
     </div>
@@ -32,7 +40,6 @@ const InfoSection = () => (
   <div className="info-section center">
     <History />
     <Skills />
-    <Bio />
     <Contact />
   </div>
 )
@@ -64,8 +71,7 @@ const History = () => (
       title="Rapid7"
       description={[
           "Mar 2021 - Sep 2021",
-          "Software engineering intern working on frontend UI work.",
-          "Technologies used: ReactJS"
+          "Software Engineering intern.",
       ]}
       image={rapid7Logo}
     />
@@ -73,7 +79,7 @@ const History = () => (
       title="DCU"
       description={[
           "Sep 2018 - May 2022",
-          "Studying Computer Science at DCU."
+          "Studying Computer Science at DCU will graduate in early 2022. My main focus is web development on both the frontend and backend though my university course",
       ]}
       image={dcuLogo}
     />
@@ -103,34 +109,6 @@ const Skills = () => (
       <SmallBox text="CSS" image={cssLogo} />
       <SmallBox text="SQL" image={sqlLogo} />
       <SmallBox text="Linux" image={linuxLogo} />
-    </div>
-  </div>
-)
-
-const Bio = () => (
-  <div className="section bio-section">
-    <h1 className="info-title">Bio</h1>
-    <div className="bio-box">
-      <p>
-        I first became interested in programming when I was in 
-        secondary school. Since then my skills and experience 
-        have grown both in breadth in depth. In 2018, I 
-        enrolled in the Computer Science course in DCU and 
-        will graduate in early 2022. My main focus is web 
-        development on both the frontend and backend though 
-        my university course has given me the opportunity to 
-        learn a wide variety of skills such as object-oriented
-        programming, algorithms and datastructures and 
-        functional programming.
-      </p>
-      <p>
-        Delivering excellent results as a programmer involves 
-        more than just technical ability. I believe the 
-        personality traits I have, including persistance, 
-        passion, a strong work ethic and a collaborative 
-        approach to software development have helped me 
-        excel in the past and will continue to be helpful.
-      </p>
     </div>
   </div>
 )
