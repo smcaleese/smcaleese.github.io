@@ -69,18 +69,20 @@ const History = () => (
   <div className="section history-section">
     <h1 className="info-title">History</h1>
     <HistoryCard
-      title="Rapid7"
+      title="Rapid7 - Software Engineering Intern"
       description={[
           "Mar 2021 - Sep 2021",
-          "Software Engineering intern.",
+          `My first time working as a Software Engineer professionally. In this internship, I gained valuable experience with technologies and practices such as
+          git, continous integration, scrum, ReactJS and NodeJS.`,
       ]}
       image={rapid7Logo}
     />
     <HistoryCard
-      title="DCU"
+      title="DCU - Computer Science"
       description={[
           "Sep 2018 - May 2022",
-          "Studying Computer Science at DCU will graduate in early 2022. My main focus is web development on both the frontend and backend though my university course",
+          `My university degree has given me the the opportunity to learn a wide variety of technologies and skills including algorithms and data structure, database design,
+          functional programming, and object-oriented programming. The 3rd and 4th year projects that are part of the course are great opportunities to apply and learn practical skills.`,
       ]}
       image={dcuLogo}
     />
