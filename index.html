@@ -4,29 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <title>Stephen McAleese's Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Stephen McAleese</title>
     <style>
-    body {
-        background-color: #fafafa;
-        font-size: 1.25rem;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vw;
-    }
     .box {
-        width: auto;
         max-width: 100rem;
-    }
-    p {
-        padding: 0.5rem;
-    }
-    a.link {
-        color: blue;
-        text-decoration: underline;
+        margin-top: 10rem;
     }
     </style>
 </head>
@@ -34,9 +18,10 @@
     <nav class="navbar">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
-                Stephen McAleese
+                <h1 class="title is-3">Stephen McAleese</h1>
             </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-target">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-target"
+            onclick="document.querySelector('.navbar-menu').classList.toggle('is-active')">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -44,13 +29,18 @@
         </div>
         <div id="navbar-target" class="navbar-menu">
             <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="books.html">Books</a>
+                </div>
             </div>
         </div>
     </nav>
-
     <div class="container">
         <div class="box">
-            <h1 class="title is-1">About Me</h1>
+            <h1 class="title is-3">About Me</h1>
             <div class="block">
                 <p>Hi, my name is Stephen McAleese.</p>
                 <p>I am currently a 4th year student studying Computer Science in DCU. I previously worked at Rapid7 as a software engineering intern in the summer of 2021.
@@ -63,12 +53,13 @@
                 </p>
                 <p>
                     <strong>Reading:</strong> I mostly like reading non-fiction books related to science and technology but I also like subjects such as philosophy, history and some fiction.
+                    My <a href="books.html">bookshelf</a> contains many of the books I like.
                 </p>
                 <p>
                     <strong>Writing:</strong> I like to write about technology, productivity and big-picture ideas in general.
                 </p>
             </div>
-            <h1 class="title is-1">Contact</h1>
+            <h1 class="title is-3">Contact</h1>
             <p>Feel free to contact me by sending an email to stephenmcaleese11@gmail.com</p>
         </div>
     </div>
