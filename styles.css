@@ -2,15 +2,20 @@ body {
     font-size: 1.25rem;
 }
 
-.container {
+.center {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 p,
 a {
     color: black;
+}
+
+p {
+    margin: 0.5rem;
 }
 
 a.link {
