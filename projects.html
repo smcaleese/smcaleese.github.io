@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Projects</title>
+    <style>
+        .project {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <h1 class="title is-3">Stephen McAleese</h1>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-target"
+            onclick="document.querySelector('.navbar-menu').classList.toggle('is-active')">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar-target" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="books.html">Books</a>
+                </div>
+                <div class="navbar-item">
+                    <a href="projects.html">Projects</a>
+                </div>
+            </div>
+        </div>
+    </nav>
     
+    <div class="box project">
+        <h1 class="title is-5">DCU Intelligent Assistant</h1>
+        <div class="columns">
+            <div class="column">
+                <p>hello</p>
+            </div>
+            <div class="column">
+                <p>hello</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
