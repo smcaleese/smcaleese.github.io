@@ -9,6 +9,11 @@ body {
     align-items: center;
 }
 
+.navbar {
+    box-shadow: 0 0 5px 1px #ccc;
+    padding: 0.5rem;
+}
+
 p,
 a {
     color: black;
