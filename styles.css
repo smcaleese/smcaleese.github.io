@@ -15,15 +15,22 @@ body {
 }
 
 p,
-a {
+.header-link {
     color: black;
+    text-decoration: none;
 }
 
 p {
     margin: 0.5rem;
 }
 
-a.link {
+a {
     color: blue;
     text-decoration: underline;
+}
+
+ul {
+    list-style-type: circle;
+    color: black;
+    margin-left: 2rem;
 }
