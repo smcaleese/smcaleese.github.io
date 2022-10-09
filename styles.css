@@ -34,3 +34,7 @@ ul {
     color: black;
     margin-left: 2rem;
 }
+
+tr.recommend {
+    color: #1393e2;
+}

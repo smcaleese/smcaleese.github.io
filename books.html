@@ -19,8 +19,9 @@
         tr {
             border-bottom: 1px solid #f0f0f0;
         }
+        th,
         td {
-            padding: 0.5rem 2rem;
+            padding: 1rem 2rem;
         }
     </style>
 </head>
@@ -54,57 +55,62 @@
     <div class="container">
         <div class="bookshelf center">
             <h1 class="title is-3">Bookshelf</h1>
-            <table>
-                <tr><td>Hackers & Painters, Big Ideas From the Computer Age</td><td>Graham, Paul</td></tr>
-                <tr><td>The Singularity is Near</td><td>Kurzweil, Ray</td></tr>
-                <tr><td>Rationality: From AI to Zombies</td><td>Yudkowsky, Eliezar</td></tr>
-                <tr><td>On Writing</td><td>King, Stephen</td></tr>
-                <tr><td>A Thousand Brains, A New Theory of Intelligence</td><td>Hawkins, Jeff</td></tr>
-                <tr><td>On Intelligence</td><td>Hawkins, Jeff</td></tr>
-                <tr><td>Soft Skills: The Software Developer's Life Manual</td><td>Somnez John</td></tr>
-                <tr><td>Yes, You Can Innovate</td><td>Turner, Natalie</td></tr>
-                <tr><td>Cracking the Coding Interview</td><td>Laakmann McDowell, Gayle</td></tr>
-                <tr><td>The Intelligent Investor</td><td>Graham, Benjamin</td></tr>
-                <tr><td>What's the Use: the Unreasonable Effectiveness of Mathematics</td><td>Stewart, Ian</td></tr>
-                <tr><td>The Age of Em</td><td>Hanson, Robin</td></tr>
-                <tr><td>The Moral Animal: Why We Are the Way We Are</td><td>Wright, Robert</td></tr>
-                <tr><td>The Big Picture</td><td>Carroll, Sean</td></tr>
-                <tr><td>Life 3.0</td><td>Max Tegmark</td></tr>
-                <tr><td>The Beginning of Infinite</td><td>Deutsch, David</td></tr>
-                <tr><td>The Rational Optimist</td><td>Ridley, Matt</td></tr>
-                <tr><td>Should We All Be Vegan: A Primer for the 21st Century</td><td>Watson, Molly</td></tr>
-                <tr><td>Superintelligence</td><td>Bostrom, Nick</td></tr>
-                <tr><td>On the Shortness of Life</td><td>Lucius Annaeus Seneca</td></tr>
-                <tr><td>Classical Computer Science Problems in Python</td><td>Kopec, David</td></tr>
-                <tr><td>Web Scraping with Python: Collecting Data from the Modern Web</td><td>Mitchell, Ryan</td></tr>
-                <tr><td>Behave: The Biology of Humans at Our Best and Worst</td><td>Sapolsky, Robert</td></tr>
-                <tr><td>How Not to be Wrong, The Power of Mathematical Thinking</td><td>Ellenberg, Jordan</td></tr>
-                <tr><td>Algorithms to Live By: The Computer Science of Human Decisions</td><td>Christian, Bryan & Griffiths, Tom</td></tr>
-                <tr><td>The Alignment Problem</td><td>Christian, Bryan</td></tr>
-                <tr><td>The Blind Watchmaker</td><td>Dawkins, Richard</td></tr>
-                <tr><td>The Selfish Gene</td><td>Dawkins, Richard</td></tr>
-                <tr><td>Thinking, Fast and Slow</td><td>Kahnman, Daniel</td></tr>
-                <tr><td>A Mind for Numbers: How to Excel at Math and Science</td><td>Oakley, Barbara</td></tr>
-                <tr><td>Civilization: The West and the Rest</td><td>Ferguson, Niall</td></tr>
-                <tr><td>How Innovation Works</td><td>Ridley, Matt</td></tr>
-                <tr><td>The Art of Thinking Clearly</td><td>Dobelli, Rolf</td></tr>
-                <tr><td>Human Compatible</td><td>Russell, Stewart</td></tr>
-                <tr><td>The Rationalist's Guide to the Galaxy</td><td>Chivers, Tom</td></tr>
-                <tr><td>Homo Deus</td><td>Noah Harari, Yuval</td></tr>
-                <tr><td>Sapiens: A Brief History of Humankind</td><td>Noah Harari, Yuval</td></tr>
-                <tr><td>Free Will</td><td>Harriss, Sam</td></tr>
-                <tr><td>Mastery</td><td>Greene, Robert</td></tr>
-                <tr><td>Atomic Habits</td><td>Clear, James</td></tr>
-                <tr><td>The Precipice</td><td>Ord, Toby</td></tr>
-                <tr><td>How to Win Friends and Influence People</td><td>Carnegie, Dale</td></tr>
-                <tr><td>Rich Dad, Poor Dad</td><td>Kiyosaki, Robert</td></tr>
-                <tr><td>Intuition Pumps, And Other Tools for Thinking</td><td>Dennett, Daniel</td></tr>
-                <tr><td>The Self-Taught Programmer</td><td>Althoff, Cory</td></tr>
-                <tr><td>The Wealth and Poverty of Nations</td><td>Landes, David</td></tr>
-                <tr><td>Masters of Doom</td><td>Kushner, David</td></tr>
-                <tr><td>Superforecasting: The Art and Science of Prediction</td><td>Tetlock, Philip E.</td></tr>
-                <tr><td>If the Universe is Teeming with Aliens ... Where is Everybody?</td><td>Webb, Stephen</td></tr>
-                <tr><td>Think and Grow Rich</td><td>Hill, Napoleon Hill</td></tr>
+            <table class="table">
+                <thead>
+                    <tr><th>Title</th><th>Author</th><th>Recommend</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Hackers & Painters, Big Ideas From the Computer Age</td><td>Graham, Paul</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Singularity is Near</td><td>Kurzweil, Ray</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Rationality: From AI to Zombies</td><td>Yudkowsky, Eliezar</td><td class="has-text-centered"></td></tr>
+                    <tr><td>On Writing</td><td>King, Stephen</td><td class="has-text-centered"></td></tr>
+                    <tr><td>A Thousand Brains, A New Theory of Intelligence</td><td>Hawkins, Jeff</td><td class="has-text-centered"></td></tr>
+                    <tr><td>On Intelligence</td><td>Hawkins, Jeff</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Soft Skills: The Software Developer's Life Manual</td><td>Somnez John</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Yes, You Can Innovate</td><td>Turner, Natalie</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Cracking the Coding Interview</td><td>Laakmann McDowell, Gayle</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Intelligent Investor</td><td>Graham, Benjamin</td><td class="has-text-centered"></td></tr>
+                    <tr><td>What's the Use: the Unreasonable Effectiveness of Mathematics</td><td>Stewart, Ian</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Age of Em</td><td>Hanson, Robin</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Moral Animal: Why We Are the Way We Are</td><td>Wright, Robert</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>The Big Picture</td><td>Carroll, Sean</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Life 3.0</td><td>Max Tegmark</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>The Beginning of Infinite</td><td>Deutsch, David</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Rational Optimist</td><td>Ridley, Matt</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Should We All Be Vegan: A Primer for the 21st Century</td><td>Watson, Molly</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Superintelligence</td><td>Bostrom, Nick</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>On the Shortness of Life</td><td>Lucius Annaeus Seneca</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Classical Computer Science Problems in Python</td><td>Kopec, David</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Web Scraping with Python: Collecting Data from the Modern Web</td><td>Mitchell, Ryan</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Behave: The Biology of Humans at Our Best and Worst</td><td>Sapolsky, Robert</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>How Not to be Wrong, The Power of Mathematical Thinking</td><td>Ellenberg, Jordan</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Algorithms to Live By: The Computer Science of Human Decisions</td><td>Christian, Bryan & Griffiths, Tom</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Alignment Problem</td><td>Christian, Bryan</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Blind Watchmaker</td><td>Dawkins, Richard</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Selfish Gene</td><td>Dawkins, Richard</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Thinking, Fast and Slow</td><td>Kahnman, Daniel</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>A Mind for Numbers: How to Excel at Math and Science</td><td>Oakley, Barbara</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Civilization: The West and the Rest</td><td>Ferguson, Niall</td><td class="has-text-centered"></td></tr>
+                    <tr><td>How Innovation Works</td><td>Ridley, Matt</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>The Art of Thinking Clearly</td><td>Dobelli, Rolf</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Human Compatible</td><td>Russell, Stewart</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>The Rationalist's Guide to the Galaxy</td><td>Chivers, Tom</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Homo Deus</td><td>Noah Harari, Yuval</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Sapiens: A Brief History of Humankind</td><td>Noah Harari, Yuval</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Free Will</td><td>Harriss, Sam</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Mastery</td><td>Greene, Robert</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Atomic Habits</td><td>Clear, James</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>The Precipice</td><td>Ord, Toby</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>How to Win Friends and Influence People</td><td>Carnegie, Dale</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Rich Dad, Poor Dad</td><td>Kiyosaki, Robert</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Intuition Pumps, And Other Tools for Thinking</td><td>Dennett, Daniel</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Self-Taught Programmer</td><td>Althoff, Cory</td><td class="has-text-centered"></td></tr>
+                    <tr><td>The Wealth and Poverty of Nations</td><td>Landes, David</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Masters of Doom</td><td>Kushner, David</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>Superforecasting: The Art and Science of Prediction</td><td>Tetlock, Philip E.</td><td class="has-text-centered">&#11088;</td></tr>
+                    <tr><td>If the Universe is Teeming with Aliens ... Where is Everybody?</td><td>Webb, Stephen</td><td class="has-text-centered"></td></tr>
+                    <tr><td>Think and Grow Rich</td><td>Hill, Napoleon Hill</td><td class="has-text-centered"></td></tr>
+                </tbody>
             </table>
         </div>
     </div>

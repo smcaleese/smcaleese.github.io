@@ -1,51 +1,51 @@
-Title,Author
-"Hackers & Painters, Big Ideas From the Computer Age","Graham, Paul"
-The Singularity is Near,"Kurzweil, Ray"
-Rationality: From AI to Zombies,"Yudkowsky, Eliezar"
-On Writing,"King, Stephen"
-"A Thousand Brains, A New Theory of Intelligence","Hawkins, Jeff"
-On Intelligence,"Hawkins, Jeff"
-Soft Skills: The Software Developer's Life Manual,Somnez John
-"Yes, You Can Innovate","Turner, Natalie"
-Cracking the Coding Interview,"Laakmann McDowell, Gayle"
-The Intelligent Investor,"Graham, Benjamin"
-What's the Use: the Unreasonable Effectiveness of Mathematics,"Stewart, Ian"
-The Age of Em,"Hanson, Robin"
-The Moral Animal: Why We Are the Way We Are,"Wright, Robert"
-The Big Picture,"Carroll, Sean"
-Life 3.0,Max Tegmark
-The Beginning of Infinite,"Deutsch, David"
-The Rational Optimist,"Ridley, Matt"
-Should We All Be Vegan: A Primer for the 21st Century,"Watson, Molly"
-Superintelligence,"Bostrom, Nick"
-On the Shortness of Life,Lucius Annaeus Seneca
-Classical Computer Science Problems in Python,"Kopec, David"
-Web Scraping with Python: Collecting Data from the Modern Web,"Mitchell, Ryan"
-Behave: The Biology of Humans at Our Best and Worst,"Sapolsky, Robert"
-"How Not to be Wrong, The Power of Mathematical Thinking","Ellenberg, Jordan"
-Algorithms to Live By: The Computer Science of Human Decisions,"Christian, Bryan & Griffiths, Tom"
-The Alignment Problem,"Christian, Bryan"
-The Blind Watchmaker,"Dawkins, Richard"
-The Selfish Gene,"Dawkins, Richard"
-"Thinking, Fast and Slow","Kahnman, Daniel"
-A Mind for Numbers: How to Excel at Math and Science,"Oakley, Barbara"
-Civilization: The West and the Rest,"Ferguson, Niall"
-How Innovation Works,"Ridley, Matt"
-The Art of Thinking Clearly,"Dobelli, Rolf"
-Human Compatible,"Russell, Stewart"
-The Rationalist's Guide to the Galaxy,"Chivers, Tom"
-Homo Deus,"Noah Harari, Yuval"
-Sapiens: A Brief History of Humankind,"Noah Harari, Yuval"
-Free Will,"Harriss, Sam"
-Mastery,"Greene, Robert"
-Atomic Habits,"Clear, James"
-The Precipice,"Ord, Toby"
-How to Win Friends and Influence People,"Carnegie, Dale"
-"Rich Dad, Poor Dad","Kiyosaki, Robert"
-"Intuition Pumps, And Other Tools for Thinking","Dennett, Daniel"
-The Self-Taught Programmer,"Althoff, Cory"
-The Wealth and Poverty of Nations,"Landes, David"
-Masters of Doom,"Kushner, David"
-Superforecasting: The Art and Science of Prediction,"Tetlock, Philip E."
-If the Universe is Teeming with Aliens ... Where is Everybody?,"Webb, Stephen"
-Think and Grow Rich,"Hill, Napoleon Hill"
+title,author,recommend
+"Hackers & Painters, Big Ideas From the Computer Age","Graham, Paul",
+The Singularity is Near,"Kurzweil, Ray",
+Rationality: From AI to Zombies,"Yudkowsky, Eliezar",
+On Writing,"King, Stephen",
+"A Thousand Brains, A New Theory of Intelligence","Hawkins, Jeff",
+On Intelligence,"Hawkins, Jeff",
+Soft Skills: The Software Developer's Life Manual,Somnez John,
+"Yes, You Can Innovate","Turner, Natalie",
+Cracking the Coding Interview,"Laakmann McDowell, Gayle",
+The Intelligent Investor,"Graham, Benjamin",
+What's the Use: the Unreasonable Effectiveness of Mathematics,"Stewart, Ian",
+The Age of Em,"Hanson, Robin",
+The Moral Animal: Why We Are the Way We Are,"Wright, Robert",yes
+The Big Picture,"Carroll, Sean",
+Life 3.0,Max Tegmark,yes
+The Beginning of Infinite,"Deutsch, David",
+The Rational Optimist,"Ridley, Matt",
+Should We All Be Vegan: A Primer for the 21st Century,"Watson, Molly",
+Superintelligence,"Bostrom, Nick",yes
+On the Shortness of Life,Lucius Annaeus Seneca,yes
+Classical Computer Science Problems in Python,"Kopec, David",
+Web Scraping with Python: Collecting Data from the Modern Web,"Mitchell, Ryan",
+Behave: The Biology of Humans at Our Best and Worst,"Sapolsky, Robert",yes
+"How Not to be Wrong, The Power of Mathematical Thinking","Ellenberg, Jordan",
+Algorithms to Live By: The Computer Science of Human Decisions,"Christian, Bryan & Griffiths, Tom",
+The Alignment Problem,"Christian, Bryan",
+The Blind Watchmaker,"Dawkins, Richard",
+The Selfish Gene,"Dawkins, Richard",yes
+"Thinking, Fast and Slow","Kahnman, Daniel",yes
+A Mind for Numbers: How to Excel at Math and Science,"Oakley, Barbara",
+Civilization: The West and the Rest,"Ferguson, Niall",
+How Innovation Works,"Ridley, Matt",yes
+The Art of Thinking Clearly,"Dobelli, Rolf",yes
+Human Compatible,"Russell, Stewart",yes
+The Rationalist's Guide to the Galaxy,"Chivers, Tom",
+Homo Deus,"Noah Harari, Yuval",yes
+Sapiens: A Brief History of Humankind,"Noah Harari, Yuval",yes
+Free Will,"Harriss, Sam",
+Mastery,"Greene, Robert",
+Atomic Habits,"Clear, James",yes
+The Precipice,"Ord, Toby",yes
+How to Win Friends and Influence People,"Carnegie, Dale",yes
+"Rich Dad, Poor Dad","Kiyosaki, Robert",yes
+"Intuition Pumps, And Other Tools for Thinking","Dennett, Daniel",
+The Self-Taught Programmer,"Althoff, Cory",
+The Wealth and Poverty of Nations,"Landes, David",
+Masters of Doom,"Kushner, David",yes
+Superforecasting: The Art and Science of Prediction,"Tetlock, Philip E.",yes
+If the Universe is Teeming with Aliens ... Where is Everybody?,"Webb, Stephen",
+Think and Grow Rich,"Hill, Napoleon Hill",
