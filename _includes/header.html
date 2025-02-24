@@ -1,0 +1,10 @@
+<nav>
+    <div class="nav-container">
+        <a href="/" class="nav-brand">Stephen McAleese</a>
+        <div class="nav-links">
+            {% for item in site.data.navigation %}
+                <a href="{{ item.link }}">{{ item.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+</nav>
