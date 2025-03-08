@@ -1,0 +1,14 @@
+- title: "Resume Analyzer (2022)"
+  description: "ResumeAnalyzer is an online web application that enables software engineers to upload and analyze their resumes and learn which skills are in demand in the job market for software engineers in Ireland. ResumeAnalyzer is powered by statistical insights that were acquired by analyzing thousands of job online job posts."
+  image: "/assets/images/projects/resume-analyzer.png"
+  github: "https://github.com/smcaleese/resume-analyzer"
+
+- title: "DCU Intelligent Assistant (2021)"
+  description: "DCU Intelligent Assistant is an android app which provides useful college services such as the ability to find class timetables using a course code and date, an interactive map of DCU, and an assignments page for creating and saving assignment reminders."
+  image: "/assets/images/projects/dcu-intelligent-assistant.png"
+  github: "https://github.com/smcaleese/dcu-intelligent-assistant"
+
+- title: "Whist Single Player (2021)"
+  description: "Whist Single Player is a browser-based implementation of the card game Whist. In the game, the human player plays against three other AIs."
+  image: "/assets/images/projects/whist-single-player.png"
+  github: "https://github.com/smcaleese/whist-singleplayer"
