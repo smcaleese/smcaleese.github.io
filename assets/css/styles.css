@@ -48,6 +48,15 @@ nav {
   color: #378ce7;
 }
 
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: flex-end;
+  }
+  .nav-brand {
+    display: none;
+  }
+}
+
 .nav-links {
   font-size: 1.2rem;
   display: flex;
@@ -78,7 +87,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 800px;
   padding: 1rem;
 }
 
@@ -178,18 +186,11 @@ nav {
   align-items: center;
   margin: 4rem 0;
   gap: 2rem;
-}
-
-.post-header {
-  width: 800px;
+  width: 80%;
 }
 
 .post-header .post-title {
   font-size: 1.6rem;
-}
-
-.post-content {
-  width: 800px;
 }
 
 .post-content p {
