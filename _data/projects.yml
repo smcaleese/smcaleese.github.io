@@ -1,7 +1,7 @@
 - title: "Dublin Rent Predictor"
   description: "A web app for predicting the price of rented properties and shared rooms in Dublin based on features like the number of bedrooms, the property type, and the location. The app uses a machine learning model and a dataset of real-world rent prices from daft.ie to make predictions."
   image: "/assets/images/projects/dublin-rent-price-predictor.png"
-  github: "https://github.com/smcaleese/dublin-rent-price-estimator"
+  github: "https://github.com/smcaleese/dublin-rent-price-predictor"
 
 - title: "Resume Analyzer"
   description: "An web app that enables software engineers to upload and analyze their resumes and learn which skills are in demand in the job market for software engineers in Ireland. ResumeAnalyzer is powered by statistical insights that were acquired by analyzing thousands of job online job posts."
