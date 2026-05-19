@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects
+permalink: /projects/
 ---
 <div class="projects-header">
   <h1>My Projects</h1>

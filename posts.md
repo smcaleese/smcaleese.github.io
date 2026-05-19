@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Posts
+permalink: /posts/
 ---
 <div class="posts-header">
   <h1>Latest Posts</h1>
