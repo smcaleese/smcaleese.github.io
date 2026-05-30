@@ -1,10 +1,21 @@
-<nav>
-    <div class="nav-container">
-        <a href="/" class="nav-brand">Stephen McAleese</a>
-        <div class="nav-links">
-            {% for item in site.data.navigation %}
-                <a href="{{ item.link }}">{{ item.name}}</a>
-            {% endfor %}
-        </div>
+<header class="site-header">
+  <nav class="nav-container" aria-label="Primary navigation">
+    <a href="/" class="nav-brand">Stephen McAleese</a>
+    <div class="nav-links">
+      {% for item in site.data.navigation %}
+        {% assign item_url_with_slash = item.link | append: "/" %}
+        {% assign is_post_link = false %}
+        {% if item.name == "Writing" and page.layout == "post" %}
+          {% assign is_post_link = true %}
+        {% endif %}
+        <a
+          href="{{ item.link }}"
+          class="nav-link{% if page.url == item.link or page.url == item_url_with_slash or is_post_link %} current{% endif %}"
+          {% if page.url == item.link or page.url == item_url_with_slash or is_post_link %}aria-current="page"{% endif %}
+        >
+          {{ item.name }}
+        </a>
+      {% endfor %}
     </div>
-</nav>
+  </nav>
+</header>

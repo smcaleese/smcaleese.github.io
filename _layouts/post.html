@@ -4,12 +4,23 @@ layout: default
 
 <div class="post-container">
   <article class="post">
-    <div class="post-header">
+    <a class="back-link" href="/posts">&larr; Writing</a>
+
+    <header class="post-header">
+      {% if page.tags and page.tags.size > 0 %}
+        <div class="post-tags" aria-label="Post tags">
+          <span class="post-tags-label">Tags</span>
+          {% for tag in page.tags %}
+            <span class="post-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
       <h1 class="post-title">{{ page.title }}</h1>
       <p class="post-meta">
-        {{ page.date | date_to_string }}
+        {{ page.date | date: "%B %-d, %Y" }}
       </p>
-    </div>
+    </header>
+
     <div class="post-content">
       {{ content }}
     </div>
