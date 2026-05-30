@@ -13,10 +13,6 @@ title: Home
       <p>
         I am currently working as a software engineer at Kreoh. Previously I worked at AWS and studied Computer Science at University College Dublin and Dublin City University.
       </p>
-      <p>
-        My work sits around software engineering, AI, and useful tools: practical systems that are clear enough to understand and sturdy enough to use.
-      </p>
-
       <nav class="inline-links" aria-label="Elsewhere">
         {% for link in site.data.social_media %}
           <a href="{{ link.link }}" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
