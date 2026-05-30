@@ -3,40 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>First Post</title>
+  <title>first post | Stephen McAleese</title>
   <link rel="stylesheet" href="/assets/css/styles.css">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!---->
 </head>
 <body>
-  <nav>
-    <div class="nav-container">
-        <a href="/" class="nav-brand">Stephen McAleese</a>
-        <div class="nav-links">
-            
-                <a href="/">Home</a>
-            
-                <a href="/posts">Posts</a>
-            
-        </div>
+  <header class="site-header">
+  <nav class="nav-container" aria-label="Primary navigation">
+    <a href="/" class="nav-brand">Stephen McAleese</a>
+    <div class="nav-links">
+      
+        
+        
+        
+        <a
+          href="/"
+          class="nav-link"
+          
+        >
+          Home
+        </a>
+      
+        
+        
+        
+        <a
+          href="/posts"
+          class="nav-link current"
+          aria-current="page"
+        >
+          Writing
+        </a>
+      
+        
+        
+        
+        <a
+          href="/projects"
+          class="nav-link"
+          
+        >
+          Projects
+        </a>
+      
     </div>
-</nav>
-  <main>
-      <div class="post-container">
+  </nav>
+</header>
+
+  <main class="site-main">
+    <div class="post-container">
   <article class="post">
-    <div class="post-header">
-      <h1 class="post-title">First Post</h1>
+    <a class="back-link" href="/posts">&larr; Writing</a>
+
+    <header class="post-header">
+      
+        <div class="post-tags" aria-label="Post tags">
+          <span class="post-tags-label">Tags</span>
+          
+            <span class="post-tag">Essay</span>
+          
+            <span class="post-tag">AI</span>
+          
+        </div>
+      
+      <h1 class="post-title">first post</h1>
       <p class="post-meta">
-        22 Feb 2025
+        February 22, 2025
       </p>
-    </div>
+    </header>
+
     <div class="post-content">
-      <p>This is my first post.</p>
+      
 
     </div>
   </article>
 </div>
+
   </main>
 </body>
 </html>

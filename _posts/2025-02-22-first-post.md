@@ -1,5 +1,7 @@
 ---
 layout: post
+title: first post
+tags:
+  - Essay
+  - AI
 ---
-
-This is my first post.
