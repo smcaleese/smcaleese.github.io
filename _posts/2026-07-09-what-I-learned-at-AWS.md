@@ -15,7 +15,7 @@ Amazon is a really large company with more than one million employees in total a
 
 In Dublin, Ireland where I worked there are about 3,000 employees distributed in three separate offices.
 
-As a new grad software engineer, I was a L4 employee. Levels L1 to L3 are for warehouse workers so L4 is the first corporate level.
+As a new-grad software engineer, I joined Amazon at L4 as an SDE I.
 
 I worked in a backend-focused team in CloudWatch. CloudWatch is an AWS service focused on observability: collecting and analyzing metrics and logs from services so that developers using AWS products can identify and troubleshoot the applications they are running.
 
@@ -50,7 +50,7 @@ Like most software companies, Amazon typically follows standard software enginee
 What’s unique about Amazon is the scale the company is operating at and their role in the tech ecosystem. 
 
 Given the massive demand for AWS services and the fact that AWS is the leading cloud provider, it’s not an exaggeration to say that AWS is the backbone of the internet.  
-So what is AWS? At the most basic level AWS provides compute (EC2) and storage (S3 and RDS) as a service. This means that if you want to create a web app, you can quickly and cheaply set up a server and store files on AWS instead of having to buy a server rack and set it up yourself. Though there are many other higher-level services in AWS such as CloudWatch.
+So what is AWS? At the most basic level, AWS provides compute services such as EC2, storage services such as S3, and managed database services such as RDS. This means that if you want to create a web app, you can quickly provision computing resources, store files and set up a database without having to buy and operate your own physical servers. Though there are many other higher-level services in AWS such as CloudWatch.
 
 Many large internet companies like Netflix, Stripe and Uber are running their servers and other digital infrastructure on AWS. Consequently, customers expect AWS services to be extremely reliable and secure.
 
