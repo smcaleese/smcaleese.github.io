@@ -1,3 +1,8 @@
+- title: "Presentation Generator Agent"
+  description: "An AI agent that turns a chat conversation into a real, downloadable PowerPoint deck. The model writes a python-pptx program that runs in an isolated Docker container, and the slides are rendered into a live preview. Ask for changes in plain English and each one becomes a new version, with PPTX and PDF export. Built with React, Fastify, PostgreSQL and DeepSeek."
+  image: "/assets/images/projects/presentation-generator-agent.png"
+  github: "https://github.com/smcaleese/presentation-generator-agent"
+
 - title: "Dublin Rent Predictor"
   description: "A web app for predicting the price of rented properties and shared rooms in Dublin based on features like the number of bedrooms, the property type, and the location. The app uses a machine learning model and a dataset of real-world rent prices from daft.ie to make predictions."
   image: "/assets/images/projects/dublin-rent-price-predictor.png"
